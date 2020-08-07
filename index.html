@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VanillaJS-ToDos</title>
+    <title>MyToDos-VanillaJS</title>
     <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->  
     
     <link rel="stylesheet" type="text/css" href="stlylist.css">   
@@ -21,23 +21,28 @@
       <img src="https://picaflor-azul.com/images/plus-circle1.png" />
     </button> -->
     
-    <div class="cardItemsCount">
-      
+    <div class="cardItemsCount">      
     </div>
     
     <div class="cardAll">
       <span onclick="All()">All Items</span>
     </div>
+
     <div class="cardClearAll">
       <span onclick="clearAll()">Clear All</span>
     </div>
+
+    <div class="cardActive">
+      <span class="activeList" onclick="activeList()">Active </span>
+    </div>
+    <div class="cardCompleted">
+      <span class="completedList" onclick="completedList()">Completed </span>
+    </div>
+
       <div class="cardList"> 
         <!--To do List-->  
       </div>  
-    <div class="cardFooter">
-      <button class="activeList" onclick="activeList()">Active </button>
-      <button class="completedList" onclick="completedList()">Completed </button>
-    </div>
+   
 
   </div>
 </body>

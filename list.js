@@ -109,7 +109,7 @@ function activeList(){
 
 function updateList(arrayElements) {
   if (arrayElements.length==0) {
-    document.querySelector(".cardList").innerHTML =  "<center><div  class='listItems' style='background: #f5f3f3;text-align: center;padding:10px'>No List Found</div></center><br>";
+    document.querySelector(".cardList").innerHTML =  "<center><div  class='listItems' style='background: #000;text-align: center;padding:10px'>No List Found</div></center><br>";
     document.querySelector(".cardItemsCount").innerHTML= arrayElements.length+" Items";
   } 
   else {    
@@ -117,7 +117,7 @@ function updateList(arrayElements) {
     document.querySelector(".cardItemsCount").innerHTML= arrayElements.length+" Items";
     for (let i = 0; i < arrayElements.length; i++) {
       document.querySelector(".cardList").innerHTML +=
-        "<center><div class='listItems' style='background: #f5f3f3' id='"+i+"'>" +
+        "<center><div class='listItems' style='background: #000' id='"+i+"'>" +
         arrayElements[i]+"</div></center><br>";
     }
   }

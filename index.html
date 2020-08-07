@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VanillaJS-ToDos</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->  
+    
+    <link rel="stylesheet" type="text/css" href="stlylist.css">   
+    <link rel="stylesheet" type="text/css" href="grid.css">   
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!--    <script src="todo.js"></script>    -->  
+    <script src="list.js"></script>      
+</head>
+<body>
+  <div class="container">
+    <input type="text" class="addNewList" placeholder="What needs to be done ?" onchange="addElement()" />
+    <!--<button class="addBtn" onclick="addElement()">
+      <img src="https://picaflor-azul.com/images/plus-circle1.png" />
+    </button> -->
+    
+    <div class="cardItemsCount">
+      
+    </div>
+    
+    <div class="cardAll">
+      <span onclick="All()">All Items</span>
+    </div>
+    <div class="cardClearAll">
+      <span onclick="clearAll()">Clear All</span>
+    </div>
+      <div class="cardList"> 
+        <!--To do List-->  
+      </div>  
+    <div class="cardFooter">
+      <button class="activeList" onclick="activeList()">Active </button>
+      <button class="completedList" onclick="completedList()">Completed </button>
+    </div>
+
+  </div>
+</body>
+</html>
+
+
+<!-- 
+    <section class="todo-main">
+      <div>
+        <h1>todos</h1>
+        <input type="text" placeholder="What needs to be done ?" class="todonew" id="todoinput" onchange="entertodoList()">
+      </div>
+      <div class="todolist">
+           <div class="card">             
+             <div class="card-list">
+             <ul id="listItems">
+                 //to do list
+               </ul>            
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                     <div class="col items-left"><span id="count"></span> Items left</div>
+                     <div class="col items-control"> 
+                       <span class="w3-button">All</span>
+                       <span class="w3-button" onclick="fnActive()">Active</span>
+                       <span class="w3-button" onclick="fnCompleted()">Completed</span>
+                     </div>
+                     <div class="col items-completed"><span id="completed" onclick="clearCompleted()">Clear completed</span></div>
+                </div>              
+              </div>
+           </div>
+       </div>      
+     </section>
+     <footer>
+      
+     </footer>
+ 
+-->

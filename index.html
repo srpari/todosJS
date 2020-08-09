@@ -16,6 +16,7 @@
 </head>
 <body>
   <div class="container">
+    <span class="todoTitle"> My Todo List </span>
     <input type="text" class="addNewList" placeholder="What needs to be done ?" onchange="addElement()" />
     <!--<button class="addBtn" onclick="addElement()">
       <img src="https://picaflor-azul.com/images/plus-circle1.png" />
@@ -27,16 +28,14 @@
     <div class="cardAll">
       <span onclick="All()">All Items</span>
     </div>
-
-    <div class="cardClearAll">
-      <span onclick="clearAll()">Clear All</span>
-    </div>
-
     <div class="cardActive">
       <span class="activeList" onclick="activeList()">Active </span>
     </div>
     <div class="cardCompleted">
       <span class="completedList" onclick="completedList()">Completed </span>
+    </div>
+    <div class="cardClearAll">
+      <span onclick="clearAll()">Clear All</span>
     </div>
 
       <div class="cardList"> 

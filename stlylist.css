@@ -4,9 +4,7 @@ body {
   background-image: url('/MyToDoAppJS/background.jpg');
   background-repeat:no-repeat;
  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-   Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
- font-size: 24px;
- 
+   Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; 
 }
 
 .container {
@@ -19,18 +17,35 @@ body {
   left: 0;
   bottom: 50px;
 }
+
+.todoTitle {
+  position: absolute;
+  height: 12%;
+  width: 90%;
+  bottom: 570px;
+  left: 35px;
+  text-align: center;
+  font-size: 28px;
+  font-weight:600;
+  background-color: #313322;
+  color: #ebe7e7;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 .addNewList {
   position: absolute;
   height: 10%;
   width: 90%;
   margin: auto;
-  top: 25px;
+  top: 27px;
   right: 0;
   left: 0;
   padding: 20px;
   border-radius: 10px;
   background-color: #000; 
-  opacity: 1.0;
+  opacity: 0.5;
 }
 
 input:focus { 
@@ -65,7 +80,7 @@ input:focus {
   right: 0;
   top: 90px;
   margin: 10px;
-  font-weight: 300;
+  padding: 10px;
 }
 
 .cardItemsCount{
@@ -76,7 +91,7 @@ input:focus {
 
 .cardClearAll { 
   position: absolute;
-  left: 280px;
+  left: 490px;
 }
 
 .cardAll { 
@@ -85,16 +100,16 @@ input:focus {
 }
 
 .cardAll:hover,.cardClearAll:hover,.cardActive:hover,.cardCompleted:hover {
-  color: blue;
+  color: rgb(10, 10, 34);
 }
 
 .cardActive{
   position: absolute;
-  left: 380px;
+  left: 270px;
 }
 .cardCompleted{
   position: absolute;
-  left: 480px;
+  left: 350px;
 }
 
 
